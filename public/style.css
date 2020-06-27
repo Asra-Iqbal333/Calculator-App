@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-calculator{
+    width: 100px;
+
+}
+.main_text{
+    margin-bottom: 5px;
+    display: flex;
+
+}
+.main_text input{
+    height: 40px;
+    width: 16%;
+}
+.calc-btn{
+    margin: 2px 2px;
+}
+.clear-section{
+    display: flex;
+    align-items: center;
+}
+.num-section{
+    display: flex;
+    align-items: center;
+}
