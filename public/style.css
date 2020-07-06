@@ -2,23 +2,76 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(78, 78, 78);
+}
+.topBar{
+    text-align: center;
+    font-family: cursive;
+    color: royalblue;
 }
 
-.main-calculator{
-    width: 100px;
+.maker{
+    font-family: cursive;
+    font-size: xx-small;
+    margin: -24px 24px 19px 40px;
+}
+.main_calculator{
+    width: 148px;
+    border: 2px solid grey;
+    margin: 0 auto;
+    height: 205px;
+    background-color: lightyellow;
 
 }
+
+.input_area{
+    margin: 0 0 0 10px ;
+    padding: 10px;
+}
+
 .main_text{
-    margin-bottom: 5px;
-    display: flex;
+    width: 90%;
+    color: rgb(0, 0, 0) ;
+    background-color: rgb(174, 193, 212) ;
+    height: 35px;
+    border: 1px solid rgb(109, 109, 146);
 
 }
-.main_text input{
-    height: 40px;
-    width: 16%;
+
+.clearbtn{
+    width: 54px;
+    margin: 0 2px;
+    background-color: rgb(206, 121, 121);
+    border-radius: 7px;
+    color: black;
+    border: 1px solid grey;
+}
+.sqBtn{
+    font-size: medium;
+}
+.sqRoot{
+    height: 25px;
+    width: 29px;
+}
+.sqRoot img {
+    width: 100%;
+}
+.square img{
+    width: 150%;
+    
 }
 .calc-btn{
     margin: 2px 2px;
+    width: 25px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    background-color: cadetblue;
+}
+.calc-btn:hover{
+    cursor: pointer;
+    transform: translate(0,-10%);
+    background-color: teal;
+    color: white;
 }
 .clear-section{
     display: flex;
@@ -27,4 +80,39 @@ body{
 .num-section{
     display: flex;
     align-items: center;
+}
+.operators{
+    background-color: cadetblue;
+    border-radius: 7px;
+    color: maroon;
+    border: 1px solid grey;
+}
+.half{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.zero{
+    width: 54px;
+}
+.equalsign{ 
+    height: 45px;
+    margin-top: 29px;
+    margin-left: 5px;
+    background-color: rgb(177, 159, 212);
+    color: black;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+.equalsign:hover{
+    transform: translate(0,-8%);
+    background-color: teal;
+    color: white;
+}
+.eqSign{
+    height: 83px;
+    margin-bottom: -2px;
+}
+.bottomSect{
+    margin-top: -28px;
 }

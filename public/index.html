@@ -12,26 +12,36 @@
 </head>
 
 <body>
+    <div class="topBar">
+        <h3> Calculator App </h3>
+    </div>
     <div class="main_calculator">
-        <div class="main_text">
-            
-                <input type="number" id="output">
-            
+        <div class="input_area">
+
+            <input class="main_text" type="number" id="output">
+
+        </div>
+        <div class="maker">
+            <h5>Made by: Asra Iqbal</h5>
         </div>
         <div class="clear-section">
-            <button class="calc-btn">
+            <button class="calc-btn" onclick="clearResult()">
                 <i class="fa fa-long-arrow-left"></i>
             </button>
 
-            <button class="calc-btn" id="output">
+            <button class="clearbtn" onclick="clearResult()">
                 C
             </button>
-            <button class="calc-btn">
-                Root
-            </button>
-            <button class="calc-btn">
-                x^2
-            </button>
+            <div class="sqRoot"> <button class="calc-btn">
+                    <b> <img src="images/root.png" alt=""> </b>
+                </button>
+            </div>
+            <div class="square">
+                <button class="calc-btn sqBtn">
+                    <b> <img src="images/square.png" alt=""> </b>
+
+                </button>
+            </div>
         </div>
 
 
@@ -40,9 +50,9 @@
             <button class="calc-btn" onclick="getNum('7')">7</button>
             <button class="calc-btn" onclick="getNum('8')">8</button>
             <button class="calc-btn" onclick="getNum('9')">9</button>
-            <button class="calc-btn" onclick="getNum('/')">/</button>
+            <button class="calc-btn operators" onclick="getNum('/')">/</button>
             <button class="calc-btn" onclick="getNum('%')">%</button>
-            
+
         </div>
 
 
@@ -52,38 +62,34 @@
             <button class="calc-btn" onclick="getNum('4')">4</button>
             <button class="calc-btn" onclick="getNum('5')">5</button>
             <button class="calc-btn" onclick="getNum('6')">6</button>
-            <button class="calc-btn" onclick="getNum('X')">X</button>
-            <button class="calc-btn" onclick="getNum('1/5')">1/2</button>
+            <button class="calc-btn operators" onclick="getNum('*')">*</button>
+            <button class="calc-btn half" onclick="getNum('1/2')">1/2</button>
 
         </div>
 
-        <div class="num-section">
+        <div class="num-section bottomSect">
 
             <button class="calc-btn" onclick="getNum('1')">1</button>
             <button class="calc-btn" onclick="getNum('2')">2</button>
             <button class="calc-btn" onclick="getNum('3')">3</button>
-            <button class="calc-btn" onclick="getNum('-')">-</button>
-            <button class="calc-btn" onclick="getNum('=')">=</button>
+            <button class="calc-btn operators" onclick="getNum('-')">-</button>
+            <div class="eqSign">
+                <button class="equalsign" onclick="getResult()">=</button>
+            </div>
 
         </div>
 
-        <div class="num-section">
+        <div class="num-section bottomSect">
 
-            <button class="calc-btn" onclick="getNum('0')">0</button>
+            <button class="calc-btn zero" onclick="getNum('0')">0</button>
             <button class="calc-btn" onclick="getNum('.')">.</button>
-            <button class="calc-btn" onclick="getNum('+')">+</button>
+            <button class="calc-btn operators" onclick="getNum('+')">+</button>
+
 
         </div>
 
-</div>
+    </div>
 
-
-
-
-
-
-
-        </button>
 </body>
 <script src="app.js"></script>
 
